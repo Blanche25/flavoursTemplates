@@ -1,0 +1,128 @@
+# Configuration for flavours
+# https://github.com/Misterio77/flavours
+
+shell = "fish -c '{}'"
+
+# Flatcolor GTK-2
+[[items]]
+file = "~/.themes/FlatColor/colors2"
+template = "gtk"
+subtemplate = "gtk-2"
+rewrite = true
+hook = 'gsettings set org.gnome.desktop.interface gtk-theme dummy && gsettings set org.gnome.desktop.interface gtk-theme FlatColor'
+# Flatcolor GTK-3
+[[items]]
+file = "~/.themes/FlatColor/colors3"
+template = "gtk"
+subtemplate = "gtk-3"
+rewrite = true
+
+# GTK-4 theme
+[[items]]
+file = '~/.themes/FlatColor/gtk-4.0/gtk-dark.css'
+template = "gtk4"
+rewrite = true
+[[items]]
+file = '~/.themes/FlatColor/gtk-4.0/gtk.css'
+template = "gtk4"
+rewrite = true
+[[items]]
+file = '~/.config/gtk-4.0/gtk.css'
+template = "gtk4"
+rewrite = true
+[[items]]
+file = '~/.config/gtk-4.0/gtk-dark.css'
+template = "gtk4"
+rewrite = true
+
+# Vesktop
+[[items]]
+file = "~/.config/vesktop/settings/quickCss.css"
+template = "vesktop"
+rewrite = true
+
+# Zed
+[[items]]
+file = "~/.config/zed/themes/base16-flavours.json"
+template = "zed"
+rewrite = true
+
+# Obsidian
+[[items]]
+file = "~/Documents/Vault/Obsidian/.obsidian/snippets/base16.css"
+template = "obsidian"
+rewrite = true
+
+# Prism launcher
+[[items]]
+file = "~/.local/share/PrismLauncher/themes/Everforest-Dark-Hard/theme.json"
+template = "prismlauncher"
+rewrite = true
+
+# deltashell
+[[items]]
+file = "~/.config/delta-shell/theme.json"
+template = "deltashell"
+rewrite = true
+hook = "deltashell restart"
+
+# noctalia
+[[items]]
+file = "~/.config/noctalia/colors.json"
+template = "noctalia"
+rewrite = true
+
+# Tilix
+[[items]]
+file = "~/.local/share/blackbox/schemes/base16.json"
+template = "tilix"
+rewrite = true
+
+# Kitty terminal
+[[items]]
+file = '~/.config/kitty/kitty.conf'
+template = 'kitty'
+rewrite = true
+# Waybar
+[[items]]
+file = "~/.config/waybar/colors.css"
+template = "waybar"
+rewrite = true
+hook = 'pkill -SIGUSR2 waybar'
+
+# Eww
+[[items]]
+file = "~/.config/eww/scss/colors.scss"
+template = "eww"
+rewrite = true
+
+# Sway
+[[items]]
+file = "~/.config/sway/config.d/colors"
+template = "sway"
+rewrite = true
+
+# SwayNC
+[[items]]
+file = "~/.config/swaync/style.css"
+template = "swaync"
+rewrite = false
+start = "/* start colors */"
+end = "/* end colors */"
+hook = 'killall swaync && swaync &'
+
+# Rofi
+[[items]]
+file = "~/.config/rofi/config.rasi"
+template = "rofi"
+rewrite = false
+start = "/* start colors */"
+end = "/* end colors */"
+
+# wlogout
+[[items]]
+file = "~/.config/wlogout/style.css"
+template = "wlogout"
+rewrite = false
+start = "/* start colors */"
+end = "/* end colors */"

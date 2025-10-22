@@ -1,0 +1,18 @@
+scheme: "Moonfly"
+author: "bluz71"
+base00: "080808" # base
+base01: "323437" # mantle
+base02: "323437" # surface0
+base03: "323437" # surface1
+base04: "949494" # surface2
+base05: "bdbdbd" # text
+base06: "9e9e9e" # subtext
+base07: "ae81ff" # lavender
+base08: "ff5d5d" # red
+base09: "c6c684" # peach
+base0A: "e3c78a" # yellow
+base0B: "8cc85f" # green
+base0C: "79dac8" # teal
+base0D: "80a0ff" # blue
+base0E: "cf87e8" # mauve
+base0F: "ae81ff" # flamingo
